@@ -37,6 +37,7 @@ sudo ./toggle.sh tgl example-site
 ```
 ## Requirements
 - Nginx installed and running
+- Script must be made executable `chmod +x toggle.sh`
 - Script must be executed with `sudo`
 - Site configuration files should exist in `/etc/nginx/sites-available/`
 
@@ -48,7 +49,7 @@ sudo ./toggle.sh tgl example-site
 
 ## Notes
 - If a site configuration file does not exist in `/etc/nginx/sites-available/`, the script will not attempt to enable it.
-- Nginx must be reloaded after enabling or disabling a site for changes to take effect.
+- Nginx is automatically reloaded by the script so that the changes will take effect.
 
 ## License
 This script is provided as-is without warranty. Feel free to modify and distribute as needed.
